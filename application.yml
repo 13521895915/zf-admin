@@ -11,6 +11,6 @@ spring:
 spring:
   profiles: default
   application:
-    name: admin-config-default
+    name: admin-config-default #¹þ¿©
 
 
