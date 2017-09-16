@@ -1,4 +1,4 @@
-spring:
+ï»¿spring:
   profiles:
    active: dev
 ---
@@ -10,13 +10,13 @@ server:
   port: 7001
 eureka:
   server:
-    enable-self-preservation: true  #ÉèÖÃÎªfalseÊ±ÊÇ¹Ø±Õ±£»¤Ä£Ê½£¬Ä¬ÈÏ¿ªÆô£¨¿ªÆôºó²»»áÇåÀíµôÎŞĞ§Î¢·şÎñ£©
-    eviction-interval-timer-in-ms: 6000    #ÉèÖÃÇåÀí·şÎñÊ±¼ä£¬Ä¬ÈÏ60Ãë£¨½¨Òé²»ĞŞ¸Ä£©µ¥Î»ºÁÃë
-  instance:                    #ÊµÀı¶¨Òå
-    hostname: eureka-7001.com  #¶¨ÒåÊµÀıÖ÷»úÃû³Æ
+    enable-self-preservation: true  #è®¾ç½®ä¸ºfalseæ—¶æ˜¯å…³é—­ä¿æŠ¤æ¨¡å¼ï¼Œé»˜è®¤å¼€å¯ï¼ˆå¼€å¯åä¸ä¼šæ¸…ç†æ‰æ— æ•ˆå¾®æœåŠ¡ï¼‰
+    eviction-interval-timer-in-ms: 6000    #è®¾ç½®æ¸…ç†æœåŠ¡æ—¶é—´ï¼Œé»˜è®¤60ç§’ï¼ˆå»ºè®®ä¸ä¿®æ”¹ï¼‰å•ä½æ¯«ç§’
+  instance:                    #å®ä¾‹å®šä¹‰
+    hostname: eureka-7001.com  #å®šä¹‰å®ä¾‹ä¸»æœºåç§°
   client:
-    registerWithEureka: false  #ÊÇ·ñ½«eureka×ÔÉí×÷ÎªÓ¦ÓÃ×¢²áµ½eureka×¢²áÖĞĞÄ
-    fetchRegistry: false       #²»Í¨¹ıeureka»ñÈ¡×¢²áĞÅÏ¢
+    registerWithEureka: false  #æ˜¯å¦å°†eurekaè‡ªèº«ä½œä¸ºåº”ç”¨æ³¨å†Œåˆ°eurekaæ³¨å†Œä¸­å¿ƒ
+    fetchRegistry: false       #ä¸é€šè¿‡eurekaè·å–æ³¨å†Œä¿¡æ¯
     serviceUrl:
       defaultZone: http://oyxqdev:wwww@eureka-7001.com:7001/eureka/
 security:
@@ -34,13 +34,13 @@ server:
   port: 7001
 eureka:
   server:
-    enable-self-preservation: true  #ÉèÖÃÎªfalseÊ±ÊÇ¹Ø±Õ±£»¤Ä£Ê½£¬Ä¬ÈÏ¿ªÆô£¨¿ªÆôºó²»»áÇåÀíµôÎŞĞ§Î¢·şÎñ£©
-    eviction-interval-timer-in-ms: 6000    #ÉèÖÃÇåÀí·şÎñÊ±¼ä£¬Ä¬ÈÏ60Ãë£¨½¨Òé²»ĞŞ¸Ä£©µ¥Î»ºÁÃë
-  instance:                    #ÊµÀı¶¨Òå
-    hostname: eureka-7001.com  #¶¨ÒåÊµÀıÖ÷»úÃû³Æ
+    enable-self-preservation: true  #è®¾ç½®ä¸ºfalseæ—¶æ˜¯å…³é—­ä¿æŠ¤æ¨¡å¼ï¼Œé»˜è®¤å¼€å¯ï¼ˆå¼€å¯åä¸ä¼šæ¸…ç†æ‰æ— æ•ˆå¾®æœåŠ¡ï¼‰
+    eviction-interval-timer-in-ms: 6000    #è®¾ç½®æ¸…ç†æœåŠ¡æ—¶é—´ï¼Œé»˜è®¤60ç§’ï¼ˆå»ºè®®ä¸ä¿®æ”¹ï¼‰å•ä½æ¯«ç§’
+  instance:                    #å®ä¾‹å®šä¹‰
+    hostname: eureka-7001.com  #å®šä¹‰å®ä¾‹ä¸»æœºåç§°
   client:
-    registerWithEureka: false  #ÊÇ·ñ½«eureka×ÔÉí×÷ÎªÓ¦ÓÃ×¢²áµ½eureka×¢²áÖĞĞÄ
-    fetchRegistry: false       #²»Í¨¹ıeureka»ñÈ¡×¢²áĞÅÏ¢
+    registerWithEureka: false  #æ˜¯å¦å°†eurekaè‡ªèº«ä½œä¸ºåº”ç”¨æ³¨å†Œåˆ°eurekaæ³¨å†Œä¸­å¿ƒ
+    fetchRegistry: false       #ä¸é€šè¿‡eurekaè·å–æ³¨å†Œä¿¡æ¯
     serviceUrl:
       defaultZone: http://oyxqbate:wwww@eureka-7001.com:7001/eureka/
 security:

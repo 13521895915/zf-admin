@@ -1,4 +1,4 @@
-spring:
+ï»¿spring:
   profiles:
    active: dev
 ---
@@ -11,6 +11,6 @@ spring:
 spring:
   profiles: default
   application:
-    name: admin-config-default #¹þ¿©
+    name: admin-config-default #å“ˆå’¯
 
 
