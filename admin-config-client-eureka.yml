@@ -1,0 +1,53 @@
+spring:
+  profiles:
+   active: dev
+---
+spring:
+  profiles: dev
+  application:
+    name: admin-config-client-eureka
+server:
+  port: 7001
+eureka:
+  server:
+    enable-self-preservation: true  #设置为false时是关闭保护模式，默认开启（开启后不会清理掉无效微服务）
+    eviction-interval-timer-in-ms: 6000    #设置清理服务时间，默认60秒（建议不修改）单位毫秒
+  instance:                    #实例定义
+    hostname: eureka-7001.com  #定义实例主机名称
+  client:
+    registerWithEureka: false  #是否将eureka自身作为应用注册到eureka注册中心
+    fetchRegistry: false       #不通过eureka获取注册信息
+    serviceUrl:
+      defaultZone: http://oyxqdev:wwww@eureka-7001.com:7001/eureka/
+security:
+  basic:
+    enabled: true
+  user: 
+    name: oyxqdev
+    password: wwww 
+---
+spring:
+  profiles: bate
+  application:
+    name: admin-config-client-eureka
+server:
+  port: 7001
+eureka:
+  server:
+    enable-self-preservation: true  #设置为false时是关闭保护模式，默认开启（开启后不会清理掉无效微服务）
+    eviction-interval-timer-in-ms: 6000    #设置清理服务时间，默认60秒（建议不修改）单位毫秒
+  instance:                    #实例定义
+    hostname: eureka-7001.com  #定义实例主机名称
+  client:
+    registerWithEureka: false  #是否将eureka自身作为应用注册到eureka注册中心
+    fetchRegistry: false       #不通过eureka获取注册信息
+    serviceUrl:
+      defaultZone: http://oyxqbate:wwww@eureka-7001.com:7001/eureka/
+security:
+  basic:
+    enabled: true
+  user: 
+    name: oyxqbate
+    password: wwww 
+
+
