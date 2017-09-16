@@ -1,0 +1,16 @@
+spring:
+  profiles:
+   active: dev
+---
+spring:
+  profiles: dev
+  application:
+    name: admin-config-dev
+
+---
+spring:
+  profiles: default
+  application:
+    name: admin-config-default
+
+
